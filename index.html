@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legislacyjna Zamrażarka - Licznik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'navy-900': '#0a192f',
+              'navy-800': '#112240',
+              'navy-700': '#233554',
+              'navy-light': '#e6f1ff',
+              'accent-gold': '#64ffda', // A subtle contrast
+            },
+            fontFamily: {
+              serif: ['Merriweather', 'serif'],
+              sans: ['Open Sans', 'sans-serif'],
+            },
+            animation: {
+              'progress-shimmer': 'shimmer 2s linear infinite',
+              'tick': 'tick 0.3s ease-out forwards',
+            },
+            keyframes: {
+              shimmer: {
+                '0%': { backgroundPosition: '-200% 0' },
+                '100%': { backgroundPosition: '200% 0' }
+              },
+              tick: {
+                '0%': { opacity: '0', transform: 'translateY(4px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #ffffff;
+        color: #0a192f;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Merriweather', serif;
+      }
+      .shimmer-bg {
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+        background-size: 200% 100%;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

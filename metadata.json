@@ -1,0 +1,5 @@
+{
+  "name": "Legislacyjna Zamrażarka",
+  "description": "Aplikacja monitorująca czas oczekiwania prezydenckich projektów ustaw w Sejmie (tzw. zamrażarka), z licznikami czasu rzeczywistego i analizą AI.",
+  "requestFramePermissions": []
+}
